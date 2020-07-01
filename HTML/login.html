@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/popper.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div class="logo">
+        <img src="../IMG/register/logo.png" alt="">
+      </div>
+      <div id="main_list">
+        <div id="saoma" onclick="dian()">
+          <img src="../IMG/register/QR_2.png" alt="">
+          <img src="../IMG/register/QR_3.png" alt="">
+        </div>
+        <div class="mima">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#tab1" data-toggle="tab" class="nav-link acitve">学号登录</a>
+            </li>
+            <li>
+              <a href="#tab2" data-toggle="tab" class="nav-link">手机登录</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+                <div class="mt-4">
+                  <div class="position-relative school mt-3">
+                    <input type="text" placeholder="选择学校"  class="form-control">
+                    <img src="../IMG/register/学校.png" alt="">
+                  </div>
+                  <div class=" mt-3">
+                    <input type="text" placeholder="学号" class="form-control">
+                  </div>
+                  <div class=" mt-3">
+                    <input type="text" placeholder="密码" class="form-control">
+                  </div>
+                  <button class="mybtn mt-3">登录</button>
+                  <div class="rem_pwd mt-3">
+                    <input type="checkbox" id="auto">
+                    <label for="auto">记住密码</label>
+                    <a href="#" class="float-right">忘记密码</a>
+                  </div>
+                  <div class="mt-3 d-flex justify-content-around">
+                    <div>
+                      <img src="../IMG/register/app_icon.png" alt="">
+                      <p>扫码下载APP</p>
+                    </div>
+                    <div>
+                      <img src="../IMG/register/wenxin_icon.png" alt="">
+                      <p>扫码关注微信</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-pane">
+              <div class="mt-4">
+                <div class=" mt-3">
+                  <input type="text" placeholder="手机号" class="form-control">
+                </div>
+                <div class=" mt-3">
+                  <input type="text" placeholder="密码" class="form-control">
+                </div>
+                <button class="mybtn mt-3">登录</button>
+                <div class="rem_pwd mt-3">
+                  <input type="checkbox" id="auto">
+                  <label for="auto">记住密码</label>
+                  <a href="#" class="float-right">忘记密码</a>
+                </div>
+                <div class="mt-3 d-flex justify-content-around">
+                  <div>
+                    <img src="../IMG/register/app_icon.png" alt="">
+                    <p>扫码下载APP</p>
+                  </div>
+                  <div>
+                    <img src="../IMG/register/wenxin_icon.png" alt="">
+                    <p>扫码关注微信</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sao mt-5">
+          <div class="text-center">
+            <div class="sao_1 d-flex align-items-center mb-4">
+              <img src="../IMG/register/logo.bak.png" alt="">
+              <p>口袋校园扫码登录</p>
+            </div>
+            <div class="sao_2">
+              <img src="../IMG/register/扫码登录.png" alt="">
+              <p class="my-4">请使用口袋校园APP扫码登录</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let main_list=document.getElementById("main_list");
+      let saoma=document.getElementById("saoma");
+      let count = 1;
+      function dian(){
+        let mima=main_list.getElementsByClassName("mima")[0];
+        let sao=main_list.getElementsByClassName("sao")[0];
+        let img=saoma.getElementsByTagName("img");
+        for(let i=0;i<img.length;i++){
+          if(count==1){
+            img[i].src = "../IMG/register/AD_"+(i+2)+".png";
+            mima.style.display="none";
+            sao.style.display = "block";
+          }else{
+            img[i].src = "../IMG/register/QR_"+(i+2)+".png";
+            mima.style.display="block";
+            sao.style.display = "none";
+          }
+        }
+        if(count==1){
+          count=0
+        }else{count=1};
+      }
+
+    </script>
+  </body>
+</html>

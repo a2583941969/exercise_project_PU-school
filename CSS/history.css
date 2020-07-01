@@ -1,0 +1,139 @@
+body{font-size: 0.9rem;}
+#banner{
+  width: 100%;
+  height: 34.5vw;
+  background: url("../IMG/history/develop_banner.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.w-90{
+  max-width: 80%;
+}
+#banner div{
+  position: absolute;
+  color: #fff;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+#banner div h2{
+  font-size: 40px;
+  font-weight: 100;
+}
+#banner div p{
+  width: 40%;
+  margin: 30px auto 0;
+  font-weight: 100;
+  color: #ddd;
+}
+@media (max-width:920px){
+  #banner{height: 260px;}
+  #banner div h2{
+    font-size: 34px;
+  }
+  #banner div p{
+    width: 100%;
+  }
+}
+@media (max-width:766px){
+  #banner div{top:10px}
+  #banner div h2{
+    font-size: 24px;
+  }
+}
+#content-1>h3,#content-2>h3,#content-3>h3{
+  width: 200px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 55px;
+  background: url("../IMG/history/title_icon.png") center center no-repeat;
+  background-size: 76%;
+  margin: 0 auto;
+}
+#content-1 div div.history dl{position: relative;}
+#content-1 div div.history dl::before{
+  content: "";
+  width: 1px;
+  height: 100%;
+  display: block;
+  background-color: #ccd1d9;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  z-index: -1;
+}
+#content-1 div div.history dl::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+#content-1 div div.history dl dd.pu_left,#content-1 div div.history dl dd.pu_right{
+  position: relative;
+  padding: 30px 0;
+}
+#content-1 div div.history dl dd div.circ{
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: #4fc1e9;
+  border:3px solid #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.625rem;
+}
+.time{
+  color: #4fc1e9;
+  font-weight: bold;
+  position: absolute;
+}
+#content-1 div div.history dl dd.pu_left div.time{
+  left: 52%;
+}
+#content-1 div div.history dl dd.pu_right div.time{
+  right: 52%;
+}
+#content-1 div div.history dl dd.pu_left div.msg{
+  position: absolute;
+  right: 52%;
+}
+#content-1 div div.history dl dd.pu_right div.msg{
+  position: absolute;
+  left: 52%;
+}
+#content-1 div div.history dl dd:last-child{
+  padding-bottom: 60px;
+}
+@media (max-width:690px){
+  #content-1 div.container,#content-2 div.container{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #content-1 div div.history dl::before{
+    left: 80px;
+    margin-left: 0;
+  }
+  #content-1 div div.history dl dd div.circ{
+    left: 71px;
+    margin: 0;
+  }
+  #content-1 div div.history dl dd div.time{
+    left: 20px !important;
+  }
+  #content-1 div div.history dl dd div.msg{
+    width: 80%;
+    left: 110px !important;
+  }
+}
+#content-2 div img{
+  width: 90%;
+}
+.my_footbg{
+  background-color: #e6e6e6;
+  color: #666;
+}

@@ -1,0 +1,103 @@
+body{font-size: 12px;}
+#banner{
+  background: url("../IMG/business/banner_3.png") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 34.5vw;
+}
+
+.font-14{font-size: 14px;}
+.my_footbg{
+  background-color: #e6e6e6;
+  color: #666;
+}
+#content_1{color:#666;}
+#content_1 div ul li{line-height: 60px;}
+#content_1 div ul li>a{
+  border: 0; 
+  border-radius: 0.25rem;
+  padding: 0;
+}
+.nav-tabs{border: 0;}
+.nav-tabs .nav-link:hover{
+  background-color: skyblue;
+}
+.nav-tabs .nav-link:focus{
+  width: 100%;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background: url("../IMG/business/title_icon.png") center center no-repeat;
+  background-size: 40%;
+}
+
+#classroom>div:first-child>img{
+  width: 100%;
+}
+@media(max-width:766px){
+  .w-sm-100{width: 100%;}
+}
+@media (min-width:766px){
+  .w-md-75{width: 75%;}
+}
+#classroom .classroom_extend>div>div.fp_100{
+  padding-top:80px;
+}
+#classroom .classroom_extend div div h3::before{
+  content: "";
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  border: 2px solid #FD6B21;
+  float: left;
+  margin: 10px 10px 0 0;
+}
+#classroom .classroom_extend div div h3{
+  font-size: 24px;
+}
+@media (max-width:992px){
+  #tool div>div:first-child{
+    margin-bottom: 30px;
+  }
+}
+#teamwork>div>div>div:first-child{
+  width: 60px;
+  margin: 0 auto;
+  height: 60px;
+  background: url("../IMG/business/ping.png") center center no-repeat;
+  background-size: 90%;
+}
+#teamwork>div>div:nth-child(2) div:first-child{
+  background-image: url("../IMG/business/mei.png");
+}
+#teamwork>div>div:nth-child(3) div:first-child{
+  background-image: url("../IMG/business/pin.png");
+}
+#teamwork>div>div:nth-child(4) div:first-child{
+  background-image: url("../IMG/business/cai.png");
+}
+#teamwork>div>div:nth-child(5) div:first-child{
+  background-image: url("../IMG/business/shu.png");
+}
+#teamwork>div>div:last-child div:first-child{
+  background-image: url("../IMG/business/shang.png");
+}
+#teamwork div div div h4{
+  margin-top: 10px;
+  font-size: 22px;
+}
+#teamwork div div div p{
+  width: 80%;
+  margin: 0 auto;
+}
+#teamwork div div div h4+p{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+@media (min-width:100px){
+  .mt-xs-5{
+    margin-top:3rem ;
+  }
+}
+

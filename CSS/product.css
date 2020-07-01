@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-size: 12px;
+}
+#banner{
+  width: 100%;
+  height: 34.5vw;
+  background: url("../IMG/product/banner_4.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#banner div{
+  width: 23.5vw;
+  position: absolute;
+  right: 15vw;
+  top: 30%;
+  animation: fadeInRight 2s 1;
+}
+#banner div img{
+  width: 100%;
+}
+#content-1::before,#content-2::before{
+  content: "";
+  display: table;
+}
+#content-1 div{
+  margin-top: 150px;
+}
+#content-1 div ul li img,#content-1 div ul li p{
+  width: 208.99px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+@media (max-width:692px){
+  #content-1 div ul li{width: 100%;}
+}
+@media (min-width:692px){
+  #content-1 div ul li{width: 50%;}
+}
+@media (min-width:1000px){
+  #content-1 div ul li{width: 25%;}
+}
+.w-60{
+  width: 60%;
+}
+#content-2>div:first-child>div:first-child,#content-2>div:last-child>div:last-child{
+  margin-top:4%;
+}
+.mt_50{margin-top: 50px;}
+#content-2 div div h3{
+  font-size: 22px;
+  font-weight: 900;
+}
+#content-2 div div h3,#content-2 div div p{
+  margin: 0 auto;
+}
+#content-2>div:first-child{
+  margin-top: 100px;
+} 
+#content-3{
+  width: 100%;
+  height: 28.4vw;
+  background: url("../IMG/product/function_5.png") center center no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  position: relative;
+}
+@media (max-width:767px){
+  #content-3{height: 255px !important;}
+}
+#content-3 div{
+  width: 250px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+#content-3 div h3{
+  font-size: 24px;
+  font-weight: 900;
+}
+#content-3 div p{
+  margin-top: 20px;
+  width: 80%;
+}

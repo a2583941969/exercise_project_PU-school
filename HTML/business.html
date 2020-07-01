@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../CSS/bootstrap.css">
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/business.css">
+  <script src="../JS/jquery.min.js"></script>
+  <script src="../JS/popper.min.js"></script>
+  <script src="../JS/bootstrap.min.js"></script>
+  <script src="../JS/business.js"></script>
+</head>
+
+<body>
+  <!-- 小屏头部 -->
+  <div class="navbar h-t bg-dark d-md-none p-0">
+    <img src="../IMG/header/brand.png" alt="">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#fold-nav">
+      <span class="fold-icon"></span>
+      <span class="fold-icon"></span>
+      <span class="fold-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="fold-nav">
+      <ul class="navbar-nav bg-dark">
+        <li class="nav-item font-small pl-3 py-1 mt-1">
+          <a href="index.html" class="nav-link text-muted">首页</a>
+        </li>
+        <li class="nav-item font-small pl-3 py-1">
+          <a href="product.html" class="nav-link text-muted">产品功能</a>
+        </li>
+        <li class="nav-item font-small pl-3 py-1">
+          <a href="#" class="nav-link text-muted">业务分类</a>
+        </li>
+        <li class="nav-item font-small pl-3 py-1">
+          <a href="history.html" class="nav-link text-muted">发展历程</a>
+        </li>
+        <li class="nav-item font-small pl-3 py-1">
+          <a href="download.html" class="nav-link text-muted">下载APP</a>
+        </li>
+        <li class="nav-item font-small pl-3 py-1">
+          <a href="login.html" class="nav-link text-muted">登陆入口</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 中屏以上头部 -->
+  <div class="container" id="max-header">
+    <div class="header-t navbar-expand p-0 d-sm-none d-md-block w-60">
+      <ul class=" d-flex w-100 justify-content-around mb-0">
+        <li>
+          <a class="font-small" href="index.html">首页</a>
+        </li>
+        <li>
+          <a class="font-small"  href="product.html">产品功能</a>
+        <li>
+          <a class="font-small" style="color: red;" href="#">业务分类</a>
+        </li>
+        <li>
+          <img src="../IMG/header/logo.png" alt="">
+        </li>
+        <li>
+          <a class="font-small" href="history.html">发展历程</a>
+        </li>
+        <li>
+          <a class="font-small" href="download.html">下载app</a>
+        </li>
+        <li>
+          <a class="font-small" href="login.html">登陆入口</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- banner图 -->
+  <div id="banner"></div>
+  <!-- 网页主体 -->
+  <div id="content_1" class="container mt-5">
+    <!-- 列表头 -->
+    <div>
+      <ul class="nav nav-tabs d-flex justify-content-around" id="a1">
+        <li class="nav-item col-md-4 col-sm-12 text-center" >
+          <a data-toggle="tab" class="nav-link active font-14 text-dark" href="#classroom">第二课堂</a>
+        </li>
+        <li class="nav-item col-md-4 col-sm-12 text-center">
+          <a data-toggle="tab" class="nav-link font-14 text-dark " href="#tool">团务工具</a>
+        </li>
+        <li class="nav-item col-md-4 col-sm-12 text-center">
+          <a data-toggle="tab" class="nav-link font-14 text-dark" href="#teamwork">商务合作</a>
+        </li>
+      </ul>
+    </div>
+    <!-- 对应展示页 -->
+    <div class="tab-content my-5 ">
+      <div id="classroom" class="tab-pane active">
+        <div>
+          <h5 class="pb-2 text-dark">基础服务</h5>
+          <img src="../IMG/business/product_analysis.png" alt="">
+        </div>
+        <div class="classroom_extend mt-5">
+          <h5 class="text-dark">扩展服务</h5>
+          <div class="row no-gutters mt-5">
+            <div class="col-md-6 col-sm-12 pl-5 fp_100">
+              <h3>成绩单定制</h3>
+              <p class="w-md-75 w-sm-100 mt-3">PU口袋校园可根据高校需求个性化定制成绩单，包含成绩界面布局、各数据维度等方面的定制，支持一键导出 打印等能，在通用数据上帮助高校管理第二课堂的同时， 差异化展示校学生的综合素质情况。</p>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+              <div>
+                <img src="../IMG/business/product_cjd.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters mt-5">
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+              <div>
+                <img src="../IMG/business/product_sjdt.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 pl-5 fp_100">
+              <h3>数据打通</h3>
+              <p class="w-md-75 w-sm-100 mt-3">PU口袋校园可实现与其他系统的互联互通，可实现基本信息同步维护，数据便捷查询；PU口袋校园产生的活动、部落、学分等数据也可同步至学校，便于学校对大数据进行挖掘分析</p>
+            </div>
+          </div>
+          <div class="row no-gutters mt-5">
+            <div class="col-md-6 col-sm-12 pl-5 fp_100">
+              <h3>第二课堂数据分析平台</h3>
+              <p class="w-md-75 w-sm-100 mt-3">PU口袋校园提供第二课堂数据多维度多条件的统计和分析，将各项结果准确图形化展示，并支持导出数据报告，便于学校对第二课堂大数据进行挖掘分析，对第二课堂的工作进行回顾和改进。</p>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+              <div>
+                <img src="../IMG/business/product_sjpt.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tool" class="tab-pane ">
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-sm-12 text-center">
+            <div>
+              <img src="../IMG/business/product_jyb.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12 d-flex flex-column justify-content-end">
+            <div class="">
+              <h6>团务就业平台</h6>
+              <p class="font-14">就业帮由共青团青发部为主导，苏州天宫信息技术有限公司技术开发，主要为全国青年的就业提供全方位的服务。 平台利用大数据分析为青年提供就业岗位的推荐，根据青年的特长、专业、就业意向等信息匹配至相关岗位，提高就业率， 深度服务于人才市场。并针对贫困大学生开设专属板块，为其提供专属的岗位资源，优化服务体系。</p>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters mt-5">
+          <div class="col-lg-4 col-sm-12 text-center">
+            <div>
+              <img src="../IMG/business/product_jsql.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12 d-flex flex-column justify-content-end">
+            <div>
+              <h6>江苏青联信息化平台</h6>
+              <p class=" font-14">江苏青联信息化平台是由江苏青年联合会为主导，苏州天宫信息技术有限公司技术开发， 主要为江苏省青年联合会提供日常活动日常管理、人员管理、新闻资讯、会议及通知等功能的信息化服务平台。</p>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters mt-5">
+          <div class="col-lg-4 col-sm-12 text-center">
+            <div>
+              <img src="../IMG/business/product_sq.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12 d-flex flex-column justify-content-end">
+            <div class="">
+              <h6>苏青U+（青年发展平台）</h6>
+              <p class="font-14">江苏团省委成立了江苏共青团网络综合服务平台筹建工作领导小组，由新媒体发展中心牵头，苏州天宫信息技术有限公司技术开发， 主要为青年提供日常活动、组织及人员管理、新闻资讯等的综合性信息化服务平台。</p>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters mt-5">
+          <div class="col-lg-4 col-sm-12 text-center">
+            <div >
+              <img src="../IMG/business/product_gpqn.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12 d-flex flex-column justify-content-end">
+            <div>
+              <h6>赣鄱青年云平台</h6>
+              <p class="font-14">为加快推进各级组织信息化平台、青年志愿服务平台建设, 江西团省委主导建设赣鄱青年云平台。 赣鄱青年的第二课堂平台是由苏州天宫信息技术有限公司开发，为高校和学生提供第二课堂相关服务的平台，包含活动报名审核等、申请类管理等相关功能。 整个平台也将由江西团省委和苏州天宫信息技术有限公司联手打造升级。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="teamwork" class="tab-pane ">
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-xs-5 mt-md-0">
+            <div class="teamwork_icon"></div>
+            <div class="text-center">
+              <h4>校园招聘</h4>
+              <p class="mb-1">人岗匹配、精准推送</p>
+              <p>海量毕业生信息+线上招聘平台+线下宣讲会，一站式服务个人评测+职前培训</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-xs-5 mt-md-0">
+            <div class="teamwork_icon"></div>
+            <div class="text-center">
+              <h4>校园全媒体</h4>
+              <p class="mb-1">线上+线下，渠道全覆盖</p>
+              <p>APP、公众号、微博、校园灯箱、宣传栏、DM单页等媒体平台百万级曝光</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-xs-5 mt-lg-0">
+            <div class="teamwork_icon"></div>
+            <div class="text-center">
+              <h4>校园品牌营销</h4>
+              <p class="mb-1">品牌升级、年轻化</p>
+              <p>联合团中央、团省委、学校、京东、腾讯等多方资源，提供品牌、产品、商业全方位整合营销服务</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="teamwork_icon"></div>
+            <div class="text-center">
+              <h4>校园人才培养</h4>
+              <p class="mb-1">兼职实习，成本低，效果好</p>
+              <p>企业校园俱乐部，持续的定向营销、丰富的实践活 动、完善的人才培养体系</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="teamwork_icon"></div>
+            <div class="text-center">
+              <h4>数据共享&报告输出</h4>
+              <p class="mb-1">百万级实名用户流量入口</p>
+              <p>通过PU后台数据分析，对校园活动情况实时 掌控。精准挖掘大学生行为数据和兴趣喜好</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="teamwork_icon"></div>
+            <div class="text-center">
+              <h4>商城集市</h4>
+              <p class="mb-1">精选商城、学生专享</p>
+              <p>优选与学生学习生活高关联的课程培训、旅游、 日用品、3C产品，线上商城+线下路演地推</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部信息 -->
+  <div class="container-fluid p-0">
+    <p class="text-center m-0 p-2 my_footbg font-14">
+      苏州天宫信息技术有限公司 版权所有 苏ICP备12046592号-4 苏B2-20170388
+    </p>
+  </div>
+</body>
+
+</html>

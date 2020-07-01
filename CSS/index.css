@@ -1,0 +1,353 @@
+*{padding: 0;margin: 0;}
+ul,li{list-style: none;}
+body{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;color: #555;}
+#video{
+  width: 100%;
+}
+#main>div .shade{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main .main-font{
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+#main .main-font h1{
+  font-weight: 100;
+  font-size: 36px;
+  color: #fff;
+}
+@media (max-width:768px){
+  #main>div .shade{
+    height: 40%;
+  }
+  #main .main-font{
+    top:6%;
+  }
+  #main .main-font h1{
+    font-size: 20px;
+  }
+}
+#new div div div{
+  position: relative;
+}
+#new div div div p{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0));
+  /* 文本溢出显示成省略号  */
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+@media (max-width:767.99px){
+  #container_new{max-width: 100%;margin-top: -30%;}
+  #new div div:last-child div{
+    height: 232px;
+  }
+}
+@media (min-width:768px){
+  #new div div:last-child{
+    height: 290.66px;
+  }
+  #new div div:last-child div{
+    height: 50%;
+  }
+}
+@media (min-width:992px){
+  #new div div:last-child{
+    height: 397.31px;
+  }
+  #new div div:last-child div{
+    height: 50%;
+  }
+}
+@media (min-width:1200px){
+  #new div div:last-child{
+    height: 477.33px;
+  }
+  #new div div:last-child div{
+    height: 50%;
+  }
+}
+#new div div:last-child div img{
+  height: 100%;
+}
+#new>a{
+  font-size: 12px;
+  color: #666;
+}
+#new>a p:first-child{
+  color: #337abe;
+  font-weight: bold;
+  font-size: 14px;
+}
+#new a:hover p:first-child{
+  color :#194772 ;
+}
+@media (max-width:782px){
+  #content-1{max-width: 100%;}
+}
+#content-1 .detail{color: #000;}
+#content-1 .detail h2{
+  margin-top: 50px;
+  font-weight: normal;
+  font-size: 28px;
+}
+#content-1 .detail p{
+  font-size: 14px;
+}
+.font-14{
+  font-size: 14px;
+}
+#content-1 div:last-child div div h3{
+  color: #eecf93;
+  font-size: 24px;
+}
+#content-1 div:last-child div div{position: relative;}
+#content-1 div:last-child div div::after{
+  content: "";
+  width: 0%;
+  height: 295px;
+  border-radius: 0.25em;
+  background-color: #222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+#content-1 div:last-child div div:hover::after{
+  width: 100%;
+}
+#content-2{
+  background: url("../IMG/index/index_banner_1.png") center center;
+  background-size: cover;
+}
+#content-2::before{
+  content: "";
+  display: table;
+}
+#content-2>div>div.detail{
+  margin-top: 70px;
+}
+#content-2>div>div.detail h2{font-size: 28px;}
+#content-2>div>div.detail p{
+  color: #aaa;
+}
+
+@media (min-width:100px) {
+  #content-2>div>div>ul{
+    flex-wrap: wrap;
+  }
+  #content-2>div>div>ul>li>img{width: 75%;}
+}
+@media (min-width:692px) {
+  #content-2>div>div>ul>li>img{width: 151.22px;}
+}
+@media (min-width:892px){
+  #content-2>div>div>ul{
+    flex-wrap: nowrap;
+  }
+  #content-2>div>div>ul>li>img{width: 91.6px;}
+}
+@media (min-width:1080px){
+  #content-2>div>div>ul>li>img{width: 131.6px;}
+}
+#content-2>div>div>ul>li>h3{
+  font-size: 24px;
+  color: #fff;
+}
+#content-2>div>div>ul>li>p{
+  width: 60%;
+  margin-left: 20%;
+  color: #aaa;
+}
+#content-2>div>div>ul{
+  margin: 30px auto 50px ;
+}
+@media(min-width:1024px){
+  #content-3{
+    background: url("../IMG/index/box_border.png") 50% 90px no-repeat;
+    background-size: 35%;
+  }
+  #content-3>div{
+    background: url("../IMG/index/index_tans_bg.png") center 75px no-repeat;
+    background-size: 23%;
+  }
+}
+
+#content-3::before{
+  content: "";
+  display: table;
+}
+#content-3>h2{
+  color: #000;
+  font-size: 28px;
+  margin-top: 70px;
+}
+@media (min-width:992px){
+  #content-3>div>div:last-child{
+    padding-top: 50px;
+  }
+}
+#content-3>div>div>div>div.content-3-icon{
+  background: url("../IMG/index/index_transcript.png") center center;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+}
+.w-90{width: 90%;}
+#content-3>div>div>div h3{
+  font-size: 24px;
+  color: #000;
+}
+#content-3>div>div>div p{
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+#content-3>div div:first-child div:last-child div:first-child{
+  background-image:url("../IMG/index/index_dataopen.png") ;
+}
+#content-3>div div:last-child div:first-child div:last-child{
+  background-image:url("../IMG/index/index_statistic.png") ;
+}
+#content-3>div div:last-child div:last-child div:first-child{
+  background-image:url("../IMG/index/index_work.png") ;
+}
+#content-4{
+  width: 100%;
+  background: url("../IMG/index/index_choose.png") center center no-repeat;
+  background-size: cover;
+}
+@media (max-width:767px){
+  #content-4{height: 400px;}
+}
+@media (min-width:768px){
+  #content-4{height: 500px;}
+}
+@media(min-width:1024px){
+  #content-4{height: 600px;}
+}
+#content-4 div::before,#content-5 div::before{
+  content: "";
+  display: table;
+}
+#content-4 div div{
+  margin-top:100px ;
+}
+#content-4 div div h2{
+  font-size: 30px;
+}
+#content-5{
+  width: 100%;
+  height: 203px;
+  background: #1b1c20;
+}
+#content-5 div div>div{
+  width: 40px;
+  height: 40px;
+  background-size:70%;
+  position: relative;
+}
+#content-5 div div>div:first-child{
+  background: #d8c1a2 url("../IMG/index/电话.png") center center no-repeat;
+}
+#content-5 div div>div:nth-child(2){
+  background: #d8c1a2 url("../IMG/index/定位2.png") center center no-repeat;
+}
+#content-5 div div>div:nth-child(3){
+  background: #d8c1a2 url("../IMG/index/QQ.png") center center no-repeat;
+}
+#content-5 div div>div:nth-child(4){
+  background: #d8c1a2 url("../IMG/index/微博.png") center center no-repeat;
+}
+#content-5 div div>div:last-child{
+  background: #d8c1a2 url("../IMG/index/微信.png") center center no-repeat;
+}
+#content-5 div div>div:hover{
+  background-color: #f86822;
+  transition: background-color 1.5s;
+}
+#content-5 div div>div>div{
+  background: #fff;
+  position: absolute;
+  font-size: 14px;
+  color: #222;
+  border-radius:5px ;
+  padding: 5px;
+  display: none;
+}
+#content-5 div div>div>div::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #fff;
+}
+#content-5 div div>div>div.tel{
+  width: 180px;
+  padding: 5px;
+  box-sizing: content-box;
+  top: -60px;
+  left: -80px;
+}
+#content-5 div div>div>div.tel::after{
+  margin-left: 85px;
+}
+#content-5 div div>div>div.map{
+  width: 786px;
+  height: 468px;
+  top:-480px;
+  left: -340px;
+}
+#content-5 div div>div>div.map::after{
+  margin-left:340px;
+  margin-top: 2px;
+}
+#content-5 div div>div>div.QQ{
+  width: 180px;
+  text-align: center;
+  line-height: 40px;
+  top:-55px;
+  left: -80px;
+}
+#content-5 div div>div>div.QQ::after{
+  margin-left:80px;
+  margin-top: -5px;
+}
+#content-5 div div>div>div.sina,#content-5 div div>div>div.wx{
+  width: 210px;
+  height: 210px;
+  text-align: center;
+  line-height: 40px;
+  top:-221px;
+  left: -80px;
+}
+#content-5 div div>div>div.sina img,#content-5 div div>div>div.wx img{
+  width: 200px;
+}
+#content-5 div div>div>div.sina::after,#content-5 div div>div>div.wx::after{
+  margin-left:80px;
+  margin-top: 3px;
+}
+#content-5 div div>div:hover div{
+  display: block;
+  background: #fff;
+}
